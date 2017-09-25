@@ -136,6 +136,7 @@ extension HFSwipeView: UICollectionViewDelegate {
         }
         delegate?.swipeView?(self, didSelectItemAtPath: displayIndexUsing(indexPath))
         moveRealPage(indexPath.row, animated: true)
+        
     }
 }
 
@@ -242,5 +243,7 @@ extension HFSwipeView: UIScrollViewDelegate {
         if circulating {
             resumeAutoSlide()
         }
+        finishScrolling()
+
     }
 }
