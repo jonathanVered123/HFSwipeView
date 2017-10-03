@@ -221,6 +221,5 @@ extension HFSwipeView {
         if circulating {
             resumeAutoSlide()
         }
-        collectionView.cellForItem(at: indexPath)?.alpha = 1
     }
 }
