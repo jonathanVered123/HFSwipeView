@@ -63,7 +63,7 @@ extension HFSwipeView {
         autoSlideTimer = nil
     }
     
-    public func autoSlideCallback(_ timer: Timer) {
+    @objc public func autoSlideCallback(_ timer: Timer) {
         guard count != 0 else {
             return
         }
@@ -72,3 +72,4 @@ extension HFSwipeView {
         }
     }
 }
+
